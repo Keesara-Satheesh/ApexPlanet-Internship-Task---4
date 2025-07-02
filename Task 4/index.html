@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Web Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 My Web Project Showcase</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#todo">To-Do App</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 🔹 Portfolio Section -->
+    <section id="portfolio">
+      <h2>👨‍💻 Personal Portfolio</h2>
+      <p>Welcome! I'm a front-end developer skilled in crafting responsive and dynamic websites.</p>
+      <div class="portfolio-info">
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Projects:</strong> Portfolio, To-Do App, Product Listing</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- 🔹 To-Do App Section -->
+    <section id="todo">
+      <h2>📋 To-Do List App</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="Enter a task..." />
+        <button id="addBtn">➕ Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- 🔹 Product Listing Section -->
+    <section id="products">
+      <h2>🛍 Product Listing</h2>
+      <div class="filter-controls">
+        <select id="filter">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <select id="sort">
+          <option value="default">Sort By</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+      <div id="productContainer" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Built with 💙 using HTML, CSS, JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

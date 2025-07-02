@@ -1,0 +1,128 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #87d7dc;
+  color: #333;
+}
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+nav a {
+  margin: 0 1rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 2rem;
+}
+section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+h2 {
+  color: #444;
+}
+
+/* Portfolio */
+.portfolio-info {
+  background: #d9d9d9;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #007acc;
+}S
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #007acc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* To-Do App */
+.todo-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#taskInput {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#addBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#taskList li {
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  background: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Product Listing */
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+select {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+.product h4 {
+  margin: 0.5rem 0;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .filter-controls {
+    flex-direction: column;
+  }
+}
+
